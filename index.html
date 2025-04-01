@@ -34,12 +34,18 @@
       font-weight: bold;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     #logo-container img {
-      height: 40px;
-      vertical-align: middle;
-      margin-right: 10px;
+      height: 80px; /* Increased size for better visibility */
+      margin-bottom: 5px; /* Add spacing between the logo and text */
+    }
+
+    #logo-container span {
+      font-size: 20px; /* Slightly larger font for better emphasis */
     }
 
     #chat-messages {
@@ -98,7 +104,8 @@
 <body>
   <div id="chat-container">
     <div id="logo-container">
-      <img src="InShot_20250401_170156270.jpg" alt="Logo"> AI Assist Chatbot
+      <img src="InShot_20250401_170156270.jpg" alt="Logo">
+      <span>AI Assist Chatbot</span>
     </div>
     <div id="chat-messages"></div>
     <div id="input-container">
